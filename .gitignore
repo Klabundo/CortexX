@@ -27,3 +27,5 @@ build/
 # IDE/editor files
 .vscode/
 .idea/
+
+vLLM/models/

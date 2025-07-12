@@ -1,4 +1,5 @@
 version: "3.9"
+
 services:
   backend:
     build: ./backend
@@ -17,3 +18,18 @@ services:
     volumes:
       - ./frontend:/app
     restart: unless-stopped
+
+  vllm:
+    build:
+      context: ./vllm  # Path to the vllm folder containing the Dockerfile
+    ports:
+      - "8001:8001"  # Port for the vLLM service
+    volumes:
+      - ./vllm:/app  # Bind mount for local development
+    restart: unless-stopped
+    networks:
+      - jl-intelligent-agent-system-full_default
+
+networks:
+  jl-intelligent-agent-system-full_default:
+    name: jl-intelligent-agent-system-full_default

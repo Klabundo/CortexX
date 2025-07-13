@@ -1,4 +1,0 @@
-vllm==0.4.3
-transformers==4.41.2
-torch==2.3.0  # Compatible with Python 3.14
-numpy==2.3.0  # Compatible with Python 3.14

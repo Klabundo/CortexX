@@ -28,4 +28,4 @@ build/
 .vscode/
 .idea/
 
-vLLM/models/
+models/

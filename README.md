@@ -1,5 +1,5 @@
 
-# 🤖 JL-intelligent-agent-system
+# 🤖 CortexX
 
 > A modular, locally running multi-agent AI assistant  
 > **Designed for problem-solving, automation, research, and daily personal use.**
@@ -16,7 +16,7 @@ Many features described below are still **planned but not yet implemented**. The
 
 ## 🧠 Vision
 
-The **JL-intelligent-agent-system** is built to become a powerful personal assistant that:
+The **CortexX** is built to become a powerful personal assistant that:
 
 - Understands the user’s intent
 - Breaks tasks into subtasks
@@ -172,7 +172,7 @@ This system is designed to work with high-end LLMs:
 
 ## 🧑‍💻 Project Collaboration
 
-This system is developed by Jonathan and his father as a long-term open-source initiative.
+This system is developed by Jonathan and Janne as a long-term open-source initiative.
 
 Future goals include:
 
@@ -185,9 +185,7 @@ Future goals include:
 
 ## 📝 License
 
-MIT – free to use, fork, and build upon.  
-If you use this project, please consider contributing back or giving credit.
-
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 ---
 
 ## ✅ Roadmap Snapshot

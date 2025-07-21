@@ -40,34 +40,6 @@ This system will run **entirely on your local hardware**, using **high-quality o
 - 🧠 **Quality-First AI** – Only large, high-performing models are used (no 7B unless needed)
 - ♻️ **Self-Improving Loops** – Agents may reassign tasks to improve output (future)
 
----
-
-## 🏗️ Current MVP Components
-
-The following modules are implemented at a basic level to support rapid iteration:
-
-| Component | Description |
-|----------|-------------|
-| `backend/` | FastAPI server handling AI logic and task routing |
-| `frontend/` | Minimal React interface (chat-first, extensible to images/audio) |
-| `docker-compose.yml` | Multi-container development setup |
-| `models/`, `memory/`, `storage/` | Reserved for future agent expansions |
-
----
-
-## 📁 Folder Structure
-
-```
-JL-intelligent-agent-system/
-├── backend/           # FastAPI backend server (AI routing)
-├── frontend/          # React interface (chat + output display)
-├── memory/            # (planned) chat memory persistence
-├── models/            # (planned) dynamic model loading (vLLM, GGUF, etc.)
-├── storage/           # (planned) file and result storage
-├── requirements.txt   # Python backend dependencies
-├── docker-compose.yml # Full container config
-└── README.md
-```
 
 ---
 
@@ -77,10 +49,10 @@ JL-intelligent-agent-system/
 User Input
    │
    ▼
-Frontend (React Chat)
+Frontend 
    │
    ▼
-Backend (FastAPI)
+Backend 
    │
    ▼
 Task Analyzer
@@ -111,43 +83,17 @@ Task Analyzer
 
 ## 🚀 Getting Started (Dev Setup)
 
-### Prerequisites
 
-- ✅ [Docker](https://www.docker.com/) and Docker Compose
-- ✅ [Node.js](https://nodejs.org/en/) (if running frontend manually)
-- ✅ [Python 3.10+](https://www.python.org/) (if running backend manually)
-
----
-
-### Option A – Run via Docker (recommended)
 
 ```bash
-# from project root
-docker-compose up --build
+npm install
+npm run dev
 ```
 
 This will launch:
 
-- FastAPI backend at `http://localhost:8000`
-- React frontend (Vite) at `http://localhost:3000`
+- http://localhost:5174/
 
----
-
-### Option B – Manual Local Development
-
-#### Backend (FastAPI)
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-#### Frontend (React)
-```bash
-cd frontend
-npm install
-npm run dev
-```
 
 ---
 
@@ -190,8 +136,6 @@ Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 ## ✅ Roadmap Snapshot
 
-- [x] Project scaffold: React + FastAPI
-- [x] Docker setup (multi-container)
 - [ ] vLLM integration for LLM serving
 - [ ] Memory system (long-term, persistent)
 - [ ] Review agents + scoring logic
